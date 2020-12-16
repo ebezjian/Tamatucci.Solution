@@ -6,8 +6,12 @@ using System;
 namespace TamaTucci.Tests
 {
   [TestClass]
-  public class TucciTest // will we need the IDisposable thing here?? maybe.
+  public class TucciTest : IDisposable 
   {
+    public void Dispose()
+    {
+      Tucci.ClearAll();
+    }
     // and if we do that stuff will go here
 
     [TestMethod]
@@ -30,10 +34,16 @@ namespace TamaTucci.Tests
       Assert.AreEqual(tucciName, tucciFromTucci);
     }
 
-    // [TestMethod]
+    [TestMethod]
+    public void TucciConstructor_InstantiatesWithAnIDAndGetAReturn_Int()
     // test to assign an id to a tucci
-    // {
-    // }
+    {
+      string TucciName = "Jeff Goldblum";
+      Tucci newTucci = new Tucci(TucciName);
+
+      int result = newTucci.Id;
+      Assert.AreEqual(3, result);
+    }
 
     // [TestMethod]
     // test to retrieve list of all tuccis
