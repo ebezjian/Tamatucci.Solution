@@ -28,7 +28,13 @@ namespace TamaTucci.Models
     public static void ClearAll()
     {
       _instances.Clear();
-  }
+    }
+
+    public static Tucci Find(int ID)
+    {
+      return _instances[ID - 1];
+    }
+
 
   // {}
 }

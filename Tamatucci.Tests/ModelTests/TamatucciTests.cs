@@ -12,7 +12,6 @@ namespace TamaTucci.Tests
     {
       Tucci.ClearAll();
     }
-    // and if we do that stuff will go here
 
     [TestMethod]
     public void TucciConstructor_GivesLifeToANewTamaTucci_ResultIsANewTucci()
@@ -59,15 +58,20 @@ namespace TamaTucci.Tests
       Assert.AreEqual(3, result);
     }
 
-    // [TestMethod]
-    // test to retrieve list of all tuccis
-    // {
-    // }
-
-    // [TestMethod]
+    [TestMethod]
     // test to retrieve a single tucci (by id)
-    // {
-    // }
+    public void Find_ReturnsSingleTucci_Tucci()
+    {
+      string tucciOne = "Jeff Goldblum";
+      string tucciTwo = "Tom Cruise";
+      string tucciThree = "Steve Buscemi";
+      Tucci newTucciOne = new Tucci(tucciOne);
+      Tucci newTucciTwo = new Tucci(tucciTwo);
+      Tucci newTucciThree = new Tucci(tucciThree);
+
+      Tucci result = Tucci.Find(3);
+      Assert.AreEqual(newTucciTwo, result);
+    }
 
 
 
