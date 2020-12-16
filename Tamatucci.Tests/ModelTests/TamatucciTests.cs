@@ -56,7 +56,7 @@ namespace TamaTucci.Tests
       Tucci newTucciThree = new Tucci(tucciThree);
 
       int result = newTucciThree.Id;
-      Assert.AreEqual(1, result);
+      Assert.AreEqual(3, result);
     }
 
     // [TestMethod]
