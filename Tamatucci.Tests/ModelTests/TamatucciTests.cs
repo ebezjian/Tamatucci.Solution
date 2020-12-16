@@ -44,6 +44,20 @@ namespace TamaTucci.Tests
       int result = newTucci.Id;
       Assert.AreEqual(1, result);
     }
+    [TestMethod]
+    public void TucciConstructor_MultipleTuccisAddedToListAndAreTargettedByID_RESULT()
+    // test to assign an id to a tucci
+    {
+      string tucciOne = "Jeff Goldblum";
+      string tucciTwo = "Tom Cruise";
+      string tucciThree = "Steve Buscemi";
+      Tucci newTucciOne = new Tucci(tucciOne);
+      Tucci newTucciTwo = new Tucci(tucciTwo);
+      Tucci newTucciThree = new Tucci(tucciThree);
+
+      int result = newTucciThree.Id;
+      Assert.AreEqual(1, result);
+    }
 
     // [TestMethod]
     // test to retrieve list of all tuccis
