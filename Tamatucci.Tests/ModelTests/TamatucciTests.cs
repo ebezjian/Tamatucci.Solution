@@ -73,6 +73,17 @@ namespace TamaTucci.Tests
       Assert.AreEqual(newTucciThree, result);
     }
 
+    [TestMethod]
+    public void TucciConstructor_CanFindStartingValuesForLevels_Int()
+    {
+      string tuccemi = "Steve Buscemi";
+      Tucci myTucci = new Tucci(tuccemi);
+
+      int levelResult = myTucci.HappinessLevel;
+
+      Assert.AreEqual(5, levelResult);
+    }
+
 
 
 
