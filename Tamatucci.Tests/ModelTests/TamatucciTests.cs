@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TamaTucci.Models;
 using System;
 
-namespace TamaTucci.Models
+namespace TamaTucci.Tests
 {
   [TestClass]
   public class TucciTest // will we need the IDisposable thing here?? maybe.

@@ -15,16 +15,16 @@ namespace TamaTucci.Models
 
   {
     public string TucciName { get; set;}
-    public int Id { get; } //the program will handle this
-    private static TucciList<Tucci> _instances = new TucciList<Tucci> {}; //this will hold all of our Tucci's
+//     public int Id { get; } //the program will handle this
+//     //private static TucciList<Tucci> _instances = new TucciList<Tucci> {}; //this will hold all of our Tucci's
 
-//Constructor that is building our Tucci
-    public Tucci(string tucciName)
-    {
-      TucciName = tucciName;
-      _instances.Add(this);
-      Id = _instances.Count;
-    }
+// //Constructor that is building our Tucci
+//     public Tucci(string tucciName)
+//     {
+//       TucciName = tucciName;
+//       _instances.Add(this);
+//       Id = _instances.Count;
+//     }
   }
 
   // {}
