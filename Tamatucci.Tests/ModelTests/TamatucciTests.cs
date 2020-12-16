@@ -22,9 +22,12 @@ namespace TamaTucci.Tests
     // test to save the name of an individual tucci
     public void TucciConstructor_SavesNameOfIndividualTucci_String()
     {
-      Tucci newTucci = new Tucci("Jeff Goldblum");
-      string testResult = "Bertha";
-      Assert.AreEqual(testResult, newTucci);
+      string tucciName = "Jeff Goldblum";
+
+      Tucci newTucci = new Tucci("Bertha");
+      //converting Tucci into a string to then test
+      string tucciFromTucci = newTucci.TucciName;
+      Assert.AreEqual(tucciName, tucciFromTucci);
     }
 
     // [TestMethod]
