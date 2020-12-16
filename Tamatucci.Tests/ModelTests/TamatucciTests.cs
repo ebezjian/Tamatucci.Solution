@@ -18,10 +18,14 @@ namespace TamaTucci.Tests
       Assert.AreEqual(typeof(Tucci), newTucci.GetType());
     }
 
-    // [TestMethod]
+    [TestMethod]
     // test to save the name of an individual tucci
-    // {
-    // }
+    public void TucciConstructor_SavesNameOfIndividualTucci_String()
+    {
+      Tucci newTucci = new Tucci("Jeff Goldblum");
+      string testResult = "Bertha";
+      Assert.AreEqual(testResult, newTucci);
+    }
 
     // [TestMethod]
     // test to assign an id to a tucci
