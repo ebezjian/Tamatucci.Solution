@@ -15,7 +15,7 @@ namespace TamaTucci.Tests
     // test to create a single tucci
     {
       Tucci newTucci = new Tucci("Birthatucci");
-      Assert.AreEqual(typeof(Tucci), newTucci.GetType());
+      Assert.AreNotEqual(typeof(Tucci), newTucci.GetType());
     }
 
     // [TestMethod]
