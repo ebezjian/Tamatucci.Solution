@@ -7,9 +7,10 @@
   <p>There are no items in the list.</p>
 }
 <ul>
-  @foreach (Tucci tucciName in Model)
+  @foreach (Tucci tucci in Model)
   {
-    <li><a href='/items/@tucciName.Id'>@tucci.TucciName</a></li>
+    <li><a href='/tamatuccis/@tucci.Id'>@tucci.TucciName</a></li>
+     
   }
 </ul>
 

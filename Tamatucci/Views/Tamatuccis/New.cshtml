@@ -2,10 +2,11 @@
   Layout = "_Layout";
 }
 
-<h1>Add a new Tucci to @Model.TucciName</h1>
 
-<form action="/categories/@Model.Id/items" method="post">
-  <label for="namedTucci">Name your Tucci</label>
-  <input id="namedTucci" name="namedTucci" type="text">
-  <button type='submit'>Add a Tucci</button>
+
+  
+<form action="/tamatuccis" method="post">
+  <label for="newTucci">Add a new TamaTucci</label>
+  <input id="newTucci" name="tucciName" type="text">
+  <button type="submit">Submit</button>
 </form>
