@@ -70,7 +70,7 @@ namespace TamaTucci.Tests
       Tucci newTucciThree = new Tucci(tucciThree);
 
       Tucci result = Tucci.Find(3);
-      Assert.AreEqual(newTucciTwo, result);
+      Assert.AreEqual(newTucciThree, result);
     }
 
 
