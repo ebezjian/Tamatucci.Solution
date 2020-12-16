@@ -24,7 +24,7 @@ namespace TamaTucci.Tests
     {
       string tucciName = "Jeff Goldblum";
 
-      Tucci newTucci = new Tucci("Bertha");
+      Tucci newTucci = new Tucci("Jeff Goldblum");
       //converting Tucci into a string to then test
       string tucciFromTucci = newTucci.TucciName;
       Assert.AreEqual(tucciName, tucciFromTucci);
