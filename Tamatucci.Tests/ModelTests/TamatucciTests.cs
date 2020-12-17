@@ -92,7 +92,7 @@ namespace TamaTucci.Tests
       myTucci.HappinessLevel += 5;
       int testingLevelMath = myTucci.HappinessLevel;
 
-      Assert.AreEqual(10, testingLevelMath);
+      Assert.AreEqual(15, testingLevelMath);
     }
 
 
