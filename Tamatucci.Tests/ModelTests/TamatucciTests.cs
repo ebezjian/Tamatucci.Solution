@@ -84,6 +84,17 @@ namespace TamaTucci.Tests
       Assert.AreEqual(10, levelResult);
     }
 
+    [TestMethod]
+    public void TucciLevelStats_CanValuesBeAddedDirectlyToLevelValues_Yes()
+    {
+      string tuccemi = "Steve Buscemi";
+      Tucci myTucci = new Tucci(tuccemi);
+      myTucci.HappinessLevel += 5;
+      int testingLevelMath = myTucci.HappinessLevel;
+
+      Assert.AreEqual(10, testingLevelMath);
+    }
+
 
 
 
