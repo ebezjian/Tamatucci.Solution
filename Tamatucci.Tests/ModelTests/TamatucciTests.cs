@@ -81,7 +81,7 @@ namespace TamaTucci.Tests
 
       int levelResult = myTucci.HappinessLevel;
 
-      Assert.AreEqual(5, levelResult);
+      Assert.AreEqual(10, levelResult);
     }
 
 
